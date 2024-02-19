@@ -185,7 +185,7 @@ def plot_1v1_perf(res_df,column1,column2, acc_base=100):
     # Display the plot
     # plt.show()
 
-def plot_loss(model_history, dataset):
+def plot_loss(model_history, dataset, file_ext=""):
      # Extracting loss values for training and validation from the history dictionary
     history_dict = model_history
 
@@ -218,7 +218,7 @@ def plot_loss(model_history, dataset):
     # plt.show()
 
     # save the plot
-    plt.savefig("compare/" + dataset + '.png')
+    plt.savefig(f"compare{file_ext}/" + dataset + '.png')
 
     # Closing the plot to avoid overlapping with future plots
     plt.close()

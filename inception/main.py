@@ -23,9 +23,9 @@ def build_model(input_shape, num_classes, num_modules=6):
             Z_residual = Z
 
     gap_layer = keras.layers.GlobalAveragePooling1D()(Z) 
-    output_layer = keras.layers.Dense(num_classes, activation='softmax') (gap_layer)
+    output_layer = keras.layers.Dense(num_classes, activation='softmax')(gap_layer)
 
-    model = keras.models. Model(inputs = input_layer, outputs = output_layer) 
+    model = keras.models.Model(inputs = input_layer, outputs = output_layer) 
     model.compile(loss='categorical_crossentropy', optimizer=keras.optimizers.Adam(learning_rate=0.01), metrics=['accuracy'])
 
     return model
