@@ -1,2 +1,2 @@
-model_checkpoint_path: "best_model_BeetleFly.tf"
-all_model_checkpoint_paths: "best_model_BeetleFly.tf"
+model_checkpoint_path: "best_model_Wine.tf"
+all_model_checkpoint_paths: "best_model_Wine.tf"
